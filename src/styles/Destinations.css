@@ -1,0 +1,268 @@
+/* ====================== */
+/* Manpreet Kaur (8983013) */
+/* ====================== */
+
+.destinations {
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #f0f4f9, #ffffff);
+  min-height: 100vh;
+}
+
+.destinations h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+.destinations .intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+  font-size: 1.15rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+/* Grid Layout */
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 35px;
+  margin: 0 25px;
+}
+
+/* Card Style */
+.destination-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eef2f7;
+  position: relative;
+}
+
+.destination-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Image Styling */
+.destination-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-bottom: 4px solid #2a5b8c;
+  transition: transform 0.4s ease;
+}
+
+.destination-card:hover img {
+  transform: scale(1.08);
+}
+
+/* Content */
+.card-content {
+  padding: 22px;
+}
+
+.destination-card h2 {
+  font-size: 1.9rem;
+  color: #2a5b8c;
+  margin-bottom: 12px;
+  font-weight: bold;
+  border-bottom: 2px solid #e6edf5;
+  padding-bottom: 6px;
+}
+
+.destination-card .description {
+  margin-bottom: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Highlights */
+.highlights h4 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.destination-card ul {
+  padding-left: 0;
+  margin: 10px 0;
+  list-style: none;
+}
+
+.destination-card li {
+  margin-bottom: 8px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.destination-card li::before {
+  content: "✔";
+  color: var(--primary);
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Tips */
+.destinations .tips {
+  margin-top: 15px;
+  font-style: italic;
+  color: #444;
+  background: #f8fbff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border-left: 5px solid #2a5b8c;
+  transition: background 0.3s;
+}
+
+.destination-card:hover .tips {
+  background: #eef6ff;
+}
+
+.additional-sections {
+  margin-top: 60px;
+}
+
+/* Testimonials */
+.testimonials-section {
+  max-width: 900px;
+  margin: 60px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.testimonials-section h3 {
+  font-size: 2rem;
+  margin-bottom: 35px;
+  color: var(--primary);
+}
+
+.testimonial-card {
+  background: linear-gradient(135deg, #eef6ff, #eef6ff); 
+  padding: 30px 25px;
+  margin: 10px;
+  box-shadow: none; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(135deg, #e0f0ff, #ffe8f0); /* hover with brighter tones */
+}
+
+.testimonial-content {
+  position: relative;
+  font-style: italic;
+  color: #444;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.quote-icon {
+  color: #2a5b8c;
+  font-size: 1.8rem;
+  vertical-align: middle;
+  margin: 0 5px;
+}
+
+.quote-icon.right {
+  transform: rotate(180deg);
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.testimonial-author img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--primary);
+}
+
+.testimonial-author span {
+  font-weight: bold;
+  color: #2a5b8c;
+  font-size: 1rem;
+}
+
+.slick-prev:before, .slick-next:before{
+    color: var(--primary);
+}
+
+.quote-icon {
+  color: #2a5b8c;
+  font-size: 1.8rem;
+  vertical-align: middle;
+  margin: 0 5px;
+}
+
+.quote-icon.right {
+  transform: rotate(180deg);
+}
+
+/* Slick dots customization */
+.slick-dots li button:before {
+  color: #2a5b8c;
+  font-size: 12px;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #ff6b6b;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+  text-align: center;
+  padding: 30px 20px;
+  background: #eef6ff;
+  border-radius: 20px;
+}
+
+.newsletter-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.newsletter-form input {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+}
+
+.newsletter-form button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  background-color: #2a5b8c;
+  color: white;
+  font-weight: bold;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.newsletter-form button:hover {
+  background-color: #1b3b5a;
+}
